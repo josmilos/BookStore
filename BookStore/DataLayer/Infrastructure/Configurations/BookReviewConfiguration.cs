@@ -16,7 +16,10 @@ namespace DataLayer.Infrastructure.Configurations
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
 
-
+            builder.HasOne(x => x.Book)
+                .WithMany(x => x.Reviews)
+                .HasForeignKey(x => x.Id)
+                .IsRequired(false);
         }
     }
 }

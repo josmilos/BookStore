@@ -17,6 +17,9 @@ namespace DataLayer.Infrastructure.Configurations
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
 
             builder.HasIndex(x=> x.ISBN).IsUnique();
+
+            builder.HasMany(x => x.Reviews)
+                .WithOne(x => x.Book);
         }
     }
 }

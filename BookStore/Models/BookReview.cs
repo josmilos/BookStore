@@ -16,5 +16,6 @@ namespace Models
         public string Comment { get; set; } = string.Empty;
         public double Rating { get; set; } = 0;
         public string Image { get; set; } = string.Empty;
+        public Book Book { get; set; }
     }
 }

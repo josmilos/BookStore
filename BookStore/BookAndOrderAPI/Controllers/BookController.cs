@@ -7,6 +7,7 @@ namespace BookAndOrderAPI.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
+        [HttpGet]
         public Task<ActionResult> Get()
         {
             throw new NotImplementedException();
