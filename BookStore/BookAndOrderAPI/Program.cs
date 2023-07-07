@@ -1,4 +1,5 @@
 global using Models;
+global using DataLayer.DTO;
 
 var builder = WebApplication.CreateBuilder(args);
 

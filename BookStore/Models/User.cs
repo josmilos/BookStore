@@ -15,7 +15,7 @@ namespace Models
         public string LastName { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
         public UserType UserType { get; set; }
-        public string Image { get; set; }
+        public string Image { get; set; } = string.Empty;
 
 
     }
