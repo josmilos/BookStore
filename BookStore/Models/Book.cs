@@ -18,6 +18,7 @@ namespace Models
         public DateTime ReleaseDate { get; set; }
         public string ISBN { get; set; } = string.Empty;
         public double Rating { get; set; } = 0;
+        public int Quantity { get; set; } = 0;
         public List<BookReview> Reviews { get; set; } = new List<BookReview>();
     }
 }

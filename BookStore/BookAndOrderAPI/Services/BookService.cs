@@ -134,7 +134,7 @@ namespace BookAndOrderAPI.Services
             var book = await _dbContext.Books.FindAsync(id);
             if(book != null)
             {
-                _dbContext.Remove(book);
+                _dbContext.Books.Remove(book);
                 await _dbContext.SaveChangesAsync();
             }
             else
